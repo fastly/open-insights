@@ -21,7 +21,7 @@ jobs:
     #       ${{ runner.os }}-node-
     # - if: steps.npm-cache.outputs.cache-hit != 'true'
     - run: npm install
-    - run: npm run list
+    - run: npm run lint
   build:
     runs-on: ubuntu-latest
     strategy:
