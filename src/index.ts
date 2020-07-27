@@ -95,6 +95,7 @@ function start(settings: ClientSettings): Promise<SessionResult> {
             p.setSessionConfig(v)
             v.executables = p.expandTasks()
         })
+
         const process = settings.sessionProcess || defaultSessionProcessFunc
         return process(sessionConfigs)
     })
